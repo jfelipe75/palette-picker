@@ -1,1 +1,1 @@
-# vite-practice
+# palette-picker
