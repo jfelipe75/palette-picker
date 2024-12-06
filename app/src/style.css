@@ -1,0 +1,337 @@
+/* Importing the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global font settings */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Ensure links have a uniform style */
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+a:hover {
+    color: #f5a623; /* Accent color for hover effect */
+}
+
+/* General Heading Styles */
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Specific Heading Styles */
+h1 {
+    font-size: 2.5rem; /* Large heading */
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem; /* Medium heading */
+    color: #555; /* Slightly lighter */
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.5rem; /* Smaller heading */
+    font-weight: 500;
+    color: #777; /* Subtle lighter color */
+}
+
+h4 {
+    font-size: 1.25rem; /* Smallest heading */
+    font-weight: 500;
+    color: #888;
+}
+
+/* paragraph style */
+p {
+    font-size: 1rem; /* Standard size */
+    font-weight: 400; /* Regular weight */
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.7; /* Slightly taller line height for readability */
+}
+
+/* button letter styling */
+button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200px; /* Bold weight for emphasis */
+    text-transform: uppercase; /* Uppercase text for buttons */
+    text-align: center;
+    letter-spacing: 0.3px; /* Slight letter spacing for modern appeal */
+    padding: 12px 20px;
+    background-color: #f5a623; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d94e20; /* Darker shade on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+/* list item styling */
+ul, ol {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+
+/* Form labels */
+label {
+    font-size: 1rem;
+    font-weight: 600; /* Bold for better legibility */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem; /* Standard size for inputs */
+    font-weight: 400; /* Regular weight */
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0; /* Light border color */
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #f5a623; /* Accent color on focus */
+    background-color: #fff; /* Clean white background */
+    box-shadow: 0 0 5px rgba(245, 166, 35, 0.6); /* Glow effect */
+    outline: none;
+}
+
+
+/* General form styling */
+form {
+    margin: 50px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 80%; /* Adjust based on your layout */
+    max-width: 600px; /* Max width to avoid it being too wide */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the form container */
+form:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Form elements */
+label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input fields and textareas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #e0e0e0; /* Light border color */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #f5a623; /* Accent border color on focus */
+    background-color: #fff; /* White background on focus */
+    box-shadow: 0 0 5px rgba(245, 166, 35, 0.6); /* Focus glow effect */
+    outline: none; /* Remove default browser focus outline */
+}
+
+/* Button styling */
+button[type="submit"] {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #f5a623; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width */
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #d94e20; /* Darker shade on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Optional: Add a gradient border around the form (similar to palette container) */
+form::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, #f5a623, #d94e20, #f5a623); /* Gradient border */
+    border-radius: 12px;
+    z-index: -1; /* Put the gradient border behind the form content */
+}
+
+
+/* palette header */
+#header-palette {
+    display: flex;
+    justify-content: center;
+}
+
+#palette-section { /* grid of palette containers */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.palette-container { /* Individual palette container */
+    margin: 50px;
+    padding: 20px;
+    width: 90%;
+    background: #fff;  /* Background color to ensure the container has a solid background */
+    border: 2px solid transparent; /* Initial border to create space for the shadow */
+    border-radius: 12px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: relative;
+    overflow: hidden; /* Ensures no content spills over rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adding a more pronounced border effect on hover */
+.palette-container:hover {
+    border-color: #f5a623; /* Change border color on hover for a glowing effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Optional: Add a gradient border effect */
+.palette-container::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, #f5a623, #d94e20, #f5a623); /* Gradient border */
+    border-radius: 12px;
+    z-index: -1; /* Put the gradient border behind the container */
+}
+
+.name-palette { /* Title of custom palette */
+    display: flex;
+    justify-content: center;
+}
+
+.overlaid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 70px;
+    background: linear-gradient(to bottom, white 50%, black 50%);
+}
+
+.palette-color {
+    width: 150px;
+    height: 50px;
+}
+
+.palette1, .palette2, .palette3 {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.copyHexButton { /* currently does not work, look for a fix later */
+    padding: 10px 20px; /* Adds padding around the button content */
+    height: auto; /* Allow the height to adjust based on content */
+    
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+
+.delete-button  {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(163, 158, 158);
+    padding: 10px;
+    text-align: center;
+}
+
+.delete-button:hover {
+    background-color: rgb(47, 45, 45);
+}
+
+.copyHexButton,
+.delete-button {
+    transition: all 0.3s ease;
+}
+
+
+.delete-button:hover {
+    background-color: #444;
+    color: white;
+}
+
+.temperature-div {
+    width: 50px;
+    height: 10px
+    
+}
