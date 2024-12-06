@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/swe-2-5-solo-project_palette-picker/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/swe-2-5-solo-project_palette-picker/assets/index-Cr5I-WRB.js"></script>
+    <link rel="stylesheet" crossorigin href="/swe-2-5-solo-project_palette-picker/assets/index-zfoY-drh.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1><!--Add h1 text here--></h1>
+      </header>
+      <main>
+        <form aria-label="palette-form" id="palette-form">
+          <h2>Add a Palette</h2>
+          <label for="palette-title">Palette Title:</label>
+          <input type="text" id="palette-title" name="title" />
+          <label for="color-type1">Color #1</label>
+          <input
+            type="color"
+            id="color-type1"
+            data-color="black"
+            name="color1"
+          />
+          <label for="color-type2">Color #2</label>
+          <input
+            type="color"
+            id="color-type2"
+            data-color="black"
+            name="color2"
+          />
+          <label for="color-type3">Color #3</label>
+          <input
+            type="color"
+            id="color-type3"
+            data-color="black"
+            name="color3"
+          />
+          <fieldset>
+            <legend>Temperature</legend>
+            <label for="temperature1">Warm</label>
+            <input
+              type="radio"
+              id="temperature1"
+              name="temperature"
+              value="warm"
+            />
+            <label for="temperature2">Neutral</label>
+            <input
+              type="radio"
+              id="temperature2"
+              name="temperature"
+              value="neutral"
+              checked
+            />
+            <label for="temperature3">Cold</label>
+            <input
+              type="radio"
+              id="temperature3"
+              name="temperature"
+              value="cold"
+            />
+          </fieldset>
+          <button id="submit-button">Create the Palette</button>
+        </form>
+        <h2 id="header-palette">Palettes</h2>
+        <section id="palette-section">
+          <!--DEFAULT PALETTE#1-->
+          <div class="palette-container">
+            <h3 class="name-palette">Colombia</h3>
+
+            <ul class="palette-list">
+              <li class="palette1">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #ddc82d"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#ddc82d">
+                  COPY #ddc82d
+                </button>
+              </li>
+
+              <li class="palette2">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #20b3d8"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#20b3d8">
+                  COPY #20b3d8
+                </button>
+              </li>
+
+              <li class="palette3">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #f25e5e"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#f25e5e">
+                  COPY #f25e5e
+                </button>
+              </li>
+            </ul>
+
+            <button class="delete-button">DELETE</button>
+
+            <div class="temperature-div">neutral</div>
+          </div>
+          <!--DEFAULT PALETTE#2-->
+          <div class="palette-container">
+            <h3 class="name-palette">Greens</h3>
+
+            <ul class="palette-list">
+              <li class="palette1">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #3e7d1e"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#3e7d1e">
+                  COPY #3e7d1e
+                </button>
+              </li>
+
+              <li class="palette2">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #30ed6f"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#30ed6f">
+                  COPY #30ed6f
+                </button>
+              </li>
+
+              <li class="palette3">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #054202"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#054202">
+                  COPY #054202
+                </button>
+              </li>
+            </ul>
+
+            <button class="delete-button">DELETE</button>
+
+            <div class="temperature-div">cold</div>
+          </div>
+          <!--DEFAULT PALETTE#3-->
+          <div class="palette-container">
+            <h3 class="name-palette">Goth</h3>
+
+            <ul class="palette-list">
+              <li class="palette1">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #400658"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#400658">
+                  COPY #400658
+                </button>
+              </li>
+
+              <li class="palette2">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #000000"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#000000">
+                  COPY #000000
+                </button>
+              </li>
+
+              <li class="palette3">
+                <div class="overlaid">
+                  <div
+                    class="palette-color"
+                    style="background-color: #01034e"
+                  ></div>
+                </div>
+
+                <button class="copyHexButton" data-hex="#01034e">
+                  COPY #01034e
+                </button>
+              </li>
+            </ul>
+
+            <button class="delete-button">DELETE</button>
+
+            <div class="temperature-div">cold</div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
